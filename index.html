@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kailen Howard - Full Stack Developer Portfolio showcasing innovative web applications and creative solutions." />
+    <meta name="keywords" content="Kailen Howard, Web Developer, Full Stack Developer, React Developer, Portfolio" />
+    <meta name="author" content="Kailen Howard" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Kailen Howard - Full Stack Developer" />
+    <meta property="og:description" content="Portfolio showcasing innovative web applications and creative solutions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kailen.dev" />
+    
+    <!-- Theme Color for Browser -->
+    <meta name="theme-color" content="#0a0a0a" />
+    
+    <title>Kailen Howard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Preload Animation -->
+    <style>
+      .preload {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a0a0a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+      
+      .preload::after {
+        content: '';
+        width: 40px;
+        height: 40px;
+        border: 4px solid #333;
+        border-top-color: #00ff9d;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+      }
+      
+      @keyframes loading {
+        from { transform: rotate(0turn) }
+        to { transform: rotate(1turn) }
+      }
+    </style>
+    <div class="preload"></div>
+    <script>
+      window.addEventListener('load', () => {
+        document.querySelector('.preload').style.display = 'none';
+      });
+    </script>
+  </body>
+</html>
