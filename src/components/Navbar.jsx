@@ -152,13 +152,13 @@ const Navbar = () => {
             </NavLink>
             
             <SocialLinks>
-              <SocialLink href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" data-hoverable>
+              <SocialLink href="https://github.com/kailen-howard" target="_blank" rel="noopener noreferrer" data-hoverable>
                 <FiGithub />
               </SocialLink>
-              <SocialLink href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" data-hoverable>
+              <SocialLink href="https://www.linkedin.com/in/kailen-howard-0702041b7/" target="_blank" rel="noopener noreferrer" data-hoverable>
                 <FiLinkedin />
               </SocialLink>
-              <SocialLink href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" data-hoverable>
+              <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-hoverable>
                 <FiTwitter />
               </SocialLink>
             </SocialLinks>
