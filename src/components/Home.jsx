@@ -8,6 +8,7 @@ const HomeContainer = styled(motion.div)`
   padding: 6rem 2rem 2rem;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 `;
 
 const ParticleBackground = styled.div`
@@ -46,11 +47,15 @@ const ParticleBackground = styled.div`
   }
 `;
 
+const ContentWrapper = styled.div`
+  position: relative;
+  z-index: 2;
+`;
+
 const HeroContent = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
 `;
 
 const Title = styled(motion.h1)`
@@ -112,63 +117,64 @@ const Home = () => {
     >
       <ParticleBackground />
       
-      <HeroContent>
-        <Title
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          Hi, I'm <span className="glitch" data-text="Kailen">Kailen</span>
-        </Title>
-        
-        <Subtitle>
-          <TypeAnimation
-            sequence={[
-              'Developer',
-              2000,
-              'UI/UX Enthusiast',
-              2000,
-              'Problem Solver',
-              2000,
-              'Tech Enthusiast',
-              2000,
-              'Learner',
-              2000,
-              'Creator',
-              2000,
-              'Innovator',
-              2000,
-              'Collaborator',
-              2000,
-              'Student',
-              2000,
-              'Gamer',
-              2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-          />
-        </Subtitle>
-        
-        <GlowingLine
-          initial={{ width: 0 }}
-          animate={{ width: 100 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        />
-        
-        <Description
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          I'm a university student with a growing passion for web development, 
-          networking, and security. I enjoy exploring technology, from coding to working 
-          with wires and circuit boards. 
+      <ContentWrapper>
+        <HeroContent>
+          <Title
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            Hi, I'm <span className="glitch" data-text="Kailen">Kailen</span>
+          </Title>
           
-          When I'm not diving into tech, I love spending time with my kids and finding new ways to learn and grow.
-        </Description>
-      </HeroContent>
+          <Subtitle>
+            <TypeAnimation
+              sequence={[
+                'Developer',
+                2000,
+                'UI/UX Enthusiast',
+                2000,
+                'Problem Solver',
+                2000,
+                'Tech Enthusiast',
+                2000,
+                'Learner',
+                2000,
+                'Creator',
+                2000,
+                'Innovator',
+                2000,
+                'Collaborator',
+                2000,
+                'Student',
+                2000,
+                'Gamer',
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </Subtitle>
+          
+          <GlowingLine
+            initial={{ width: 0 }}
+            animate={{ width: 100 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          />
+          
+          <Description
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            I'm a university student with a growing passion for web development, 
+            networking, and security. I enjoy exploring technology, from coding to 
+            working with wires and circuit boards. When I'm not diving into tech, I 
+            love spending time with my kids and finding new ways to learn and grow.
+          </Description>
+        </HeroContent>
+      </ContentWrapper>
     </HomeContainer>
   );
 };
