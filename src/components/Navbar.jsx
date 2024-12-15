@@ -112,7 +112,7 @@ const MobileMenuOverlay = styled(motion.div)`
   right: 0;
   bottom: 0;
   background: rgba(10, 10, 10, 0.95);
-  z-index: 999;
+  z-index: 998;
   
   @media (max-width: 768px) {
     display: block;
@@ -128,7 +128,8 @@ const MobileMenu = styled(motion.div)`
   height: 100vh;
   background: var(--color-background);
   padding: 6rem 2rem 2rem;
-  z-index: 1000;
+  z-index: 999;
+  overflow-y: auto;
   
   @media (max-width: 768px) {
     display: flex;
@@ -143,6 +144,7 @@ const MobileNavLink = styled(NavLink)`
   font-size: 1.5rem;
   text-align: center;
   width: 100%;
+  z-index: 1000;
   
   &:hover {
     color: var(--color-primary);
@@ -152,6 +154,7 @@ const MobileNavLink = styled(NavLink)`
 const MobileSocialLinks = styled(SocialLinks)`
   margin-top: 2rem;
   justify-content: center;
+  z-index: 1000;
 `;
 
 const Navbar = () => {
@@ -162,7 +165,6 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    // Prevent body scroll when menu is open
     document.body.style.overflow = !isMobileMenuOpen ? 'hidden' : 'unset';
   };
 
@@ -207,7 +209,7 @@ const Navbar = () => {
             </SocialLinks>
           </NavLinks>
 
-          <MobileMenuButton onClick={toggleMobileMenu}>
+          <MobileMenuButton onClick={toggleMobileMenu} aria-label="Toggle menu">
             {isMobileMenuOpen ? '×' : '☰'}
           </MobileMenuButton>
         </NavContainer>
