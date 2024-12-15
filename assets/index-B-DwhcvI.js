@@ -379,7 +379,7 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
     filter: blur(4px);
     opacity: 0.5;
   }
-`,rT=()=>O.jsxs(XE,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.5},children:[O.jsx(qE,{}),O.jsxs(ZE,{children:[O.jsxs(JE,{initial:{y:20,opacity:0},animate:{y:0,opacity:1},transition:{duration:.5,delay:.2},children:["Hi, I'm ",O.jsx("span",{className:"glitch","data-text":"Kailen",children:"Kailen"})]}),O.jsx(eT,{children:O.jsx(QE,{sequence:["Developer",2e3,"UI/UX Enthusiast",2e3,"Problem Solver",2e3,"Tech Enthusiast",2e3,"Learner",2e3,"Creator",2e3,"Innovator",2e3,"Collaborator",2e3,"Student",2e3,"Gamer",2e3],wrapper:"span",speed:50,repeat:1/0})}),O.jsx(nT,{initial:{width:0},animate:{width:100},transition:{duration:.8,delay:.6}}),O.jsx(tT,{initial:{y:20,opacity:0},animate:{y:0,opacity:1},transition:{duration:.5,delay:.4},children:"I'm a passionate developer focused on creating innovative and user-friendly web applications. With expertise in modern web technologies and a keen eye for design, I bring ideas to life through clean, efficient code and engaging user experiences."})]})]}),iT=le(Xe.div)`
+`,rT=()=>O.jsxs(XE,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.5},children:[O.jsx(qE,{}),O.jsxs(ZE,{children:[O.jsxs(JE,{initial:{y:20,opacity:0},animate:{y:0,opacity:1},transition:{duration:.5,delay:.2},children:["Hi, I'm ",O.jsx("span",{className:"glitch","data-text":"Kailen",children:"Kailen"})]}),O.jsx(eT,{children:O.jsx(QE,{sequence:["Developer",2e3,"UI/UX Enthusiast",2e3,"Problem Solver",2e3,"Tech Enthusiast",2e3,"Learner",2e3,"Creator",2e3,"Innovator",2e3,"Collaborator",2e3,"Student",2e3,"Gamer",2e3],wrapper:"span",speed:50,repeat:1/0})}),O.jsx(nT,{initial:{width:0},animate:{width:100},transition:{duration:.8,delay:.6}}),O.jsx(tT,{initial:{y:20,opacity:0},animate:{y:0,opacity:1},transition:{duration:.5,delay:.4},children:"I'm a university student with a growing passion for web development, networking, and security. I enjoy exploring technology, from coding to working with wires and circuit boards. When I'm not diving into tech, I love spending time with my kids and finding new ways to learn and grow."})]})]}),iT=le(Xe.div)`
   min-height: 100vh;
   padding: 8rem 2rem 2rem;
   max-width: 1200px;
@@ -627,4 +627,4 @@ ${t.message}
     }
   }
 `;document.head.appendChild(E0);const vf=document.createElement("link");vf.href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap";vf.rel="stylesheet";document.head.appendChild(vf);M1.createRoot(document.getElementById("root")).render(O.jsx(He.StrictMode,{children:O.jsx(AT,{})}));
-//# sourceMappingURL=index-F2b-zmJ9.js.map
+//# sourceMappingURL=index-B-DwhcvI.js.map
