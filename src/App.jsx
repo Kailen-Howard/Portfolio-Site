@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
@@ -26,8 +26,10 @@ const App = () => {
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Navigate to="/" replace />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </AnimatePresence>
       </AppContainer>

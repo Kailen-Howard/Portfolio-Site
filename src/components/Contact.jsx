@@ -144,8 +144,17 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const subject = `Portfolio Contact from ${formState.name}`;
+      const body = `
+Name: ${formState.name}
+Email: ${formState.email}
+
+Message:
+${formState.message}
+      `;
+      
+      window.location.href = `mailto:kailen.howard@protonmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
       setStatus('success');
       setFormState({ name: '', email: '', message: '' });
     } catch (error) {
