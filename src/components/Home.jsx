@@ -162,9 +162,11 @@ const Home = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          I'm a passionate developer focused on creating innovative and user-friendly web applications. 
-          With expertise in modern web technologies and a keen eye for design, I bring ideas to life 
-          through clean, efficient code and engaging user experiences.
+          I'm a university student with a growing passion for web development, 
+          networking, and security. I enjoy exploring technology, from coding to working 
+          with wires and circuit boards. 
+          
+          When I'm not diving into tech, I love spending time with my kids and finding new ways to learn and grow.
         </Description>
       </HeroContent>
     </HomeContainer>
